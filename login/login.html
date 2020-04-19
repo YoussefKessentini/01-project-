@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="./background.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>01</title>
+</head>
+
+<body>
+  <header>
+  <div id="particles-js">
+    <div class="header">
+      <p class="GaSh"><img src="../res/yeoo.jpg.png" width="60" height="100" class="img-fluid" alt="Responsive image"></p>
+      <ul class="nav justify-content-end">
+        <li class="nav-item">
+          <a class="nav-link active navword" href="../index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link navword" href="../creation/creation.html">creation</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link navword" href="../digitalisation/digitalisation.html">digitalisation</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link navword" href="../formation/formation.html">shop</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link navword" href="./login.html">sign up</a>
+        </li>
+      </ul>
+    </div>
+    <div class="twoo">
+      <form class="form1">
+        <h1 class="signup">sign up</h1>
+        <div class="form-group form1 space">
+          <label class="labelcenter">name</label>
+          <input type="text" class="form-control" id="name" placeholder="Enter name">
+        </div>
+        <div class="form-group ">
+          <label class="labelcenter">tache</label>
+          <select class="form-control" id="select">
+            <option value="web">ingenieur</option>
+            <option value="option">chef d'entreprise</option>
+            <option value="AI">autre</option>
+          </select>
+        </div>
+        <div class="form-group ">
+          <label class="labelcenter">Email address</label>
+          <input type="email" class="form-control" id="email" placeholder="Enter email">
+          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group ">
+          <label class="labelcenter">phone number</label>
+          <input type="number" class="form-control" id="number" placeholder="phone number">
+        </div>
+        <input type="button" value="sign up" onclick="save();" class="btn btn-primary button">
+      </form>
+      <form class="form2">
+        <h1>log in</h1>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+            placeholder="Enter email">
+          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        </div>
+        <div class="form-group form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+        <button type="submit" class="btn btn-primary">log in</button>
+      </form>
+    </div>
+   <!-- <div>
+      <span class="get-started">Get started</span>
+     
+    </div>-->
+  </div>
+</body>
+  
+  <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
+
+
+
+  <!--FireBase-->
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyCniYh5g0sByd20VMDGTuPNKtAStwyf9S4",
+      authDomain: "gomy-11d4c.firebaseapp.com",
+      databaseURL: "https://gomy-11d4c.firebaseio.com",
+      projectId: "gomy-11d4c",
+      storageBucket: "",
+      messagingSenderId: "907226738532",
+      appId: "1:907226738532:web:5a9062eb30cb51a0c85471"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+  <script>
+    function save() {
+      var name = document.getElementById('name').value;
+      var track = document.getElementById('select').value;
+      var email = document.getElementById('email').value;
+      var phone = document.getElementById('number').value;
+
+      var data = {
+        name: name,
+        track: track,
+        email: email,
+        phone: phone
+      }
+
+      // The key of a root reference is null
+      var rootRef = firebase.database().ref();
+      var key = rootRef.key;  // key === null
+      // Write the new user
+      var updates = {};
+      updates['/users/' + key] = data;
+      return firebase.database().ref().update(updates);
+    }
+  </script>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+  integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+
+</html>

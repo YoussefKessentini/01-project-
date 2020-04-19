@@ -1,0 +1,103 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+header{
+    background-image: url(../res/1bigstock-abstract-technology-background-250119211-990x556.jpg);
+    width: 100%;
+    height: 700px;
+    background-size: cover;
+}
+.GaSh{
+    margin-top: 30px;
+    margin-left: 100px;
+    font-size: 40px;
+    font-family: auto;
+    color: white
+
+}
+.nav-link{
+    font-size: 25px;
+    color: white;
+    font-family: auto;
+}
+.nav{
+    margin-top: 30px;
+    margin-right: 100px;
+}
+.phrases{
+    color: white;
+    font-size: 80px;
+    font-family: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+}
+.phrases2{
+    color: white;
+    font-size: 18px;
+    font-family: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: -17px;
+}
+.get-started{
+    background-color: transparent;
+    border-color: white;
+    color: white;
+    border-radius: 5px 5px 5px;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    margin-left: 550px;
+    margin-right: 550px;
+    margin-top: 50px;
+    font-size: 30px;
+    font-family: auto;
+    font-weight: bold;
+    padding: 10px 40px;
+    text-decoration: none;
+    list-style: none
+}
+.get-started:hover{
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.15);
+}
+hr{
+    background-color: white
+}
+.welcome{
+    font-size: 25px ;
+    font-family:"lato,sans-serif" ;
+    color: white
+}
+.choice{
+    text-decoration: none;
+    font-size: 25px;
+    font-family:"lato,sans-serif";
+    color: gold;
+  
+}
+.choices{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+.bk{
+    height: 300px;
+    width: 250px;
+}
+#choice{ 
+  background-image: url(../res/Sans\ titre-1.png);
+  background-size: cover;
+  height: 250px
+} 
+.textdeco{
+  text-decoration: none !important
+}
+.textdeco1{
+    text-decoration: none !important
+}
+.a{
+    text-decoration: none !important;
+}

@@ -1,0 +1,271 @@
+body{
+  margin-top: 0px;
+}
+.courses-photo{
+  background-image: url(../res/1digitalizationb82e00185c9c4bf68710927422bdb83f.jpg);
+  width: 100%;
+  height: 700px;
+  background-size: cover;
+}
+
+.backgrnd_img {
+    background-image: url("./ac/AC\ 1.jpg");
+    height: 300px;
+    width: 250px;
+    background-size: cover;
+    
+  }
+  .backgrn_aff {
+    display: none;
+  }
+  
+  .backgrnd_img:hover .backgrn_aff {
+    background-size: cover;
+    height: 300px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #00000059;
+    border: 1px solid #e0e0e0;
+    position: relative;
+    transition-duration: 0.2s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+  }
+  .backgrnd_img2 {
+    background-image: url("./gta5/gta5\ 1.jpg");
+    height: 300px;
+    width: 250px;
+    background-size: cover;
+  }
+  .backgrn_aff2 {
+    display: none;
+  }
+  
+  .backgrnd_img2:hover .backgrn_aff2 {
+    background-size: cover;
+    height: 300px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #00000059;
+    border: 1px solid #e0e0e0;
+    position: relative;
+    transition-duration: 0.2s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+  }
+  .backgrnd_img3 {
+    background-image: url("./aoe2/aoe2\ 2.jpg");
+    height: 300px;
+    width: 250px;
+    background-size: cover;
+  }
+  .backgrn_aff3 {
+    display: none;
+  }
+  
+  .backgrnd_img3:hover .backgrn_aff3 {
+    background-size: cover;
+    height: 300px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #00000059;
+    border: 1px solid #e0e0e0;
+    position: relative;
+    transition-duration: 0.2s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+  }
+  .backgrnd_img4{
+    background-image: url("../G-phone/res/sims4/sims\ 1.jpg");
+    background-size: cover;
+    height: 300px;
+    width: 250px;
+
+  }
+  .backgrn_aff4{
+    display: none;
+  }
+  
+  .backgrnd_img4:hover .backgrn_aff4{
+    background-size: cover;
+    height: 300px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #00000059;
+    border: 1px solid #e0e0e0;
+    position: relative;
+    transition-duration: 0.2s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+  }  
+  .backgrnd_img5 {
+    background-image: url("./csgo/cs\ go\ 3.png");
+    background-size: cover;
+    height: 300px;
+    width: 250px;
+  }
+  .backgrn_aff5 {
+    display: none;
+  }
+  
+  .backgrnd_img5:hover .backgrn_aff5 {
+    background-size: cover;
+    height: 300px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #00000059;
+    border: 1px solid #e0e0e0;
+    position: relative;
+    transition-duration: 0.2s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+  }
+  .backgrnd_img6{
+    background-image: url("./supermario/sm\ 1.jpg");
+    background-size: cover;
+    height: 300px;
+    width: 250px;
+  }
+  .backgrn_aff6 {
+    display: none;
+  }
+  
+  .backgrnd_img6:hover .backgrn_aff6 {
+    background-size: cover;
+    height: 300px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #00000059;
+    border: 1px solid #e0e0e0;
+    position: relative;
+    transition-duration: 0.2s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+  }
+.courses{
+  width: 100%;
+}
+#para{
+  background-image: url(./ac/ac\ 2\ new.png);
+  background-size: cover
+  }
+.para{
+  font-size: 25px;
+  font-family:"lato,sans-serif";
+  color: white
+}
+#para2{
+  background-image: url(./gta5/gta5\ 2\ add.png);
+  background-size: cover
+  }
+.para2{
+  font-size: 25px;
+  font-family:"lato,sans-serif";
+  color: white
+}
+#para3{
+  background-image: url(./aoe2/aoe2\ 3\ add.png);
+  background-size: cover
+  }
+.para3{
+  font-size: 25px;
+  font-family:"lato,sans-serif";
+  color: white
+}
+#para4{
+  background-image: url(../G-phone/res/sims4/sims\ 3\ copie.png);
+  background-size: cover
+  }
+.para4{
+  font-size: 25px;
+  font-family:"lato,sans-serif";
+  color: white
+}
+#para5{
+  background-image: url(./csgo/cs\ go\ 2\ add2.png);
+  background-size: cover
+  }
+.para5{
+  font-size: 25px;
+  font-family:"lato,sans-serif";
+  color: white
+}
+#para6{
+  background-image: url(./supermario/sm\ 2\ add.png);
+  background-size: cover
+  }
+.para6{
+  font-size: 25px;
+  font-family:"lato,sans-serif";
+  color: white
+}
+.close{
+  text-decoration: none;
+  font-size: 25px;
+  font-family:"lato,sans-serif";
+  color: gold
+}
+
+.title{
+  font-size: 70px;
+  color: white;
+  font-family: "lato, sans serif";
+  display: flex;
+  justify-content: center;
+  align-items: center !important;
+  padding-top: 305px !important;
+}
+.rawpad{
+  margin-right: -15px;
+  margin-left: -15px;
+  padding-left: 3%;
+  padding-top: 1%;
+}
+.rawpad1{
+  padding-left: 5% !important;
+  height: 330px;
+  margin-top: -22px;
+}
+.rawpad2{
+  padding-left: 5% !important;
+  height: 330px;
+  margin-top: -2px;
+}
+.footer{
+  padding-left: 8%;
+}
+.h3{
+  display: flex;
+  justify-content: center;
+  font-size: 50px !important;
+  margin-top: 3%;
+  margin-left: 8%;
+}
+.height{
+  height: 210px !important
+}
+.labelcenter{
+  width: 200px !important;
+  display: flex !important;
+  justify-content: center !important;
+}
+.bgmarg{
+  margin-right: 10% !important;
+  margin-top: 5%
+}
+.bgmarg1{
+  margin-top: 5%
+}
+
